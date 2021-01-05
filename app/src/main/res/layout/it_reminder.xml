@@ -26,8 +26,6 @@
                 android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/padding_small"
-                android:layout_marginLeft="@dimen/padding_small"
                 android:text="@{item.title}"
                 android:textColor="@color/black"
                 android:textSize="@dimen/text_size_normal"
@@ -37,26 +35,33 @@
 
             <TextView
                 android:id="@+id/description"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@{item.description}"
                 android:textSize="@dimen/text_size_small"
-                app:layout_constraintStart_toStartOf="@id/title"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/title"
+                app:layout_constraintEnd_toStartOf="@id/location"
                 tools:text="Description" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/location"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:text="@{item.location}"
                 android:textColor="@color/colorAccent"
                 android:textSize="@dimen/text_size_small"
-                app:layout_constraintBottom_toBottomOf="@+id/description"
+                android:layout_marginStart="@dimen/margin_normal"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/title"
+                app:layout_constraintTop_toTopOf="@id/title"
+                app:layout_constraintStart_toEndOf="@id/description"
                 tools:text="Location" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.cardview.widget.CardView>
+
 </layout>

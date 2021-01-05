@@ -13,6 +13,7 @@ import java.util.*
  * @param location      location name of the reminder
  * @param latitude      latitude of the reminder location
  * @param longitude     longitude of the reminder location
+ * @param user_email    email id of user
  * @param id          id of the reminder
  */
 
@@ -23,5 +24,6 @@ data class ReminderDTO(
     @ColumnInfo(name = "location") var location: String?,
     @ColumnInfo(name = "latitude") var latitude: Double?,
     @ColumnInfo(name = "longitude") var longitude: Double?,
+    @ColumnInfo(name = "user_email") var userEmail: String?,
     @PrimaryKey @ColumnInfo(name = "entry_id") val id: String = UUID.randomUUID().toString()
 )
