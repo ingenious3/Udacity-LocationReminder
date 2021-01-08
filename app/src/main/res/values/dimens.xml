@@ -10,4 +10,7 @@
     <dimen name="padding_large">20dp</dimen>
     <dimen name="margin_normal">16dp</dimen>
     <dimen name="margin_small">16dp</dimen>
+    <dimen name="dimen_50dp">50dp</dimen>
+    <dimen name="text_20sp">20sp</dimen>
+    <dimen name="text_22sp">22sp</dimen>
 </resources>

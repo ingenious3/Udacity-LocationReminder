@@ -20,14 +20,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="@dimen/padding_medium"
-                android:layout_marginTop="50dp">
+                android:layout_marginTop="@dimen/dimen_50dp">
 
                 <TextView
                     android:id="@+id/title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Reminder Title"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_20sp"
                     android:textStyle="bold"
                     android:padding="@dimen/padding_small"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +39,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@{reminderDataItem.title}"
-                    android:textSize="22sp"
+                    android:textSize="@dimen/text_22sp"
                     android:textStyle="normal"
                     android:padding="@dimen/padding_medium"
                     app:layout_constraintStart_toStartOf="parent"
@@ -50,7 +50,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Reminder Description"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_20sp"
                     android:textStyle="bold"
                     android:padding="@dimen/padding_small"
                     app:layout_constraintStart_toStartOf="parent"
@@ -61,7 +61,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text='@{reminderDataItem.description}'
-                    android:textSize="22sp"
+                    android:textSize="@dimen/text_22sp"
                     android:padding="@dimen/padding_medium"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/description" />
@@ -72,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:text="Location"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_20sp"
                     android:textStyle="bold"
                     android:padding="@dimen/padding_small"
                     app:layout_constraintStart_toStartOf="parent"
@@ -83,7 +83,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@{reminderDataItem.location}"
-                    android:textSize="22sp"
+                    android:textSize="@dimen/text_22sp"
                     android:padding="@dimen/padding_medium"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/location" />
